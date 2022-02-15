@@ -1,0 +1,1 @@
+Get-ADComputer -SearchBase 'DC=local' -Filter {OperatingSystem -Like '*Windows 10*' } -Properties * |Sort Name | FT Name, OperatingSystem, Description -Autosize
